@@ -1,0 +1,39 @@
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 30% 30% 30% 30% 30% 30%;
+    grid-template-areas:
+    'nav'
+    'header'
+    'main1'
+    'main2'
+    'section1 section2'
+    'footer'
+}
+.nav{
+    background-color: brown;
+}
+
+.header{
+    background-color: black;
+}
+
+.main1{
+    background-color: aquamarine;
+}
+
+.main2{
+    background-color: blueviolet;
+}
+
+.section1{
+    background-color: blue;
+}
+
+.section2{
+    background-color: burlywood;
+}
+
+.footer{
+    background-color: darkblue;
+}

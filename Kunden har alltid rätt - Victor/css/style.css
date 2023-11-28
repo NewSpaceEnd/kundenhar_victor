@@ -1,11 +1,12 @@
 body{
     margin: 0%;
+    overflow-x: hidden;
 }
 
 #main_container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 25% 27% 27% 25% 10%;
+    grid-template-rows: 10% 25% 25% 25% 25% 10%;
     grid-template-areas:
     'nav'
     'header'
@@ -16,23 +17,23 @@ body{
 }
 
 nav{
-    background-color: black ;
+    background-color: #3498db;
 }
 
 header{
-    background-color: brown;
+    background-color: #035287;
 }
 
 main1{
-    background-color: aqua;
+    background-color: #3498db;
 }
 
 main2{
-    background-color: blue;
+    background-color: #3498db;
 }
 
 main3{
-    background-color: chartreuse;
+    background-color: #3498db;
 }
 
 footer{
