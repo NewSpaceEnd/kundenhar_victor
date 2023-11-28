@@ -1,0 +1,138 @@
+body{
+    margin: 0%;
+}
+
+#main_container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 25% 27% 27% 25% 10%;
+    grid-template-areas:
+    'nav'
+    'header'
+    'main1'
+    'main2'
+    'main3'
+    'footer'
+}
+
+nav{
+    background-color: black ;
+}
+
+header{
+    background-color: brown;
+}
+
+main1{
+    background-color: aqua;
+}
+
+main2{
+    background-color: blue;
+}
+
+main3{
+    background-color: chartreuse;
+}
+
+footer{
+    background-color: #3498db;
+}
+
+.logo{
+    height: 250px;
+}
+
+.header_text{
+    text-align: center;
+    font-size: 400%;
+}
+
+.italien{
+    grid-area: main1;
+}
+
+.grekland{
+    grid-area: main2;
+}
+
+.japan{
+    grid-area: main3;
+}
+
+.japan_flat{
+    height: 707px;
+}
+
+.italien_text{
+    position: absolute;
+    top: 150%;
+    left: 2%;
+    font-size: 800%;
+    color: white;
+    text-decoration: underline;
+}
+
+.grekland_text{
+    position: absolute;
+    top: 230%;
+    left: 2%;
+    font-size: 800%;
+    color: white;
+    text-decoration: underline;
+}
+
+.japan_text{
+    position: absolute;
+    top: 310%;
+    left: 2%;
+    font-size: 800%;
+    color: #3498db;
+    text-decoration: underline;
+}
+
+
+.italien_text :hover ::after{
+    content: " - Read More";
+}
+
+.grekland_text :hover ::after{
+    content: " - Read More";
+}
+
+.japan_text :hover ::after{
+    content: " - Read More";
+}
+
+.japan_link{
+    color: white;
+}   
+
+.japan_link:visited{
+    color: white;
+}   
+
+.contact_text{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+
+h2{
+    font-size: 50%;
+}
+
+h3{
+    position: absolute;
+    left: 40%;
+    top: 100%;
+    font-size: 50%;
+}
+
+.navigation{
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: -3%;
+    font-size: 800%;
+}
