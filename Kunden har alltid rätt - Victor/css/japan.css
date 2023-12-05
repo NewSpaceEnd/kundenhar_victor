@@ -1,7 +1,12 @@
+body{
+    margin: 0%;
+    overflow-x: hidden;
+}
+
 #container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 30% 30% 30% 30% 30% 30%;
+    grid-template-rows: 18% 35% 30% 30% 30% 30% 30%;
     grid-template-areas:
     'nav'
     'header'
@@ -11,11 +16,11 @@
     'footer'
 }
 .nav{
-    background-color: brown;
+    background-color: #3498db;
 }
 
 .header{
-    background-color: black;
+    background-color: #035287;
 }
 
 .main1{
@@ -36,4 +41,39 @@
 
 .footer{
     background-color: darkblue;
+}
+
+.header_text{
+    text-align: center;
+    font-size: 400%;
+}
+
+h2{
+    font-size: 50%;
+}
+
+h3{
+    position: absolute;
+    left: 45%;
+    top: 85%;
+    font-size: 50%;
+}
+
+.logo{
+    height: 250px;
+}
+
+.navigation{
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: -3%;
+    font-size: 800%;
+}
+
+.search{
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
 }

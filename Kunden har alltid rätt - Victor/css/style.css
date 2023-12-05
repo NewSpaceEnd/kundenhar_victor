@@ -137,3 +137,10 @@ h3{
     top: -3%;
     font-size: 800%;
 }
+
+.search{
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+}
