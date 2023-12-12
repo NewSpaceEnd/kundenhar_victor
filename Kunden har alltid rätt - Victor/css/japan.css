@@ -1,3 +1,8 @@
+/*
+OBSERVERA DENNA MAPPEN ANVÄNDS INTE LÄNGRE DÅ DEN HAR MIGRERATS TILL "Style.css"
+HÄNVISA ISTÄLLET TILL DEN MAPPEN FÖR ÄNDRINGAR OCH ANNAT
+*/
+
 body{
     margin: 0%;
     overflow-x: hidden;
@@ -14,7 +19,6 @@ body{
     'main1'
     'main2'
     'section1 section2'
-    'footer'
 }
 .nav{
     background-color: #3498db;
@@ -40,20 +44,16 @@ body{
     background-color: burlywood;
 }
 
-.footer{
-    background-color: darkblue;
-}
-
 .header_text{
     text-align: center;
     font-size: 400%;
 }
 
-h2{
+h2japan{
     font-size: 50%;
 }
 
-h3{
+h3japan{
     position: absolute;
     left: 45%;
     top: 85%;
@@ -64,7 +64,7 @@ h3{
     height: 250px;
 }
 
-.navigation{
+.navigationjapan{
     color: white;
     position: absolute;
     right: 2%;
@@ -72,7 +72,7 @@ h3{
     font-size: 800%;
 }
 
-.search{
+.searchjapan{
     height: 100px;
     position: absolute;
     top: 11%;
@@ -92,9 +92,4 @@ h3{
     top: 245%;
     font-size: 200%;
     background-color: #3498db;
-}
-
-.contact_text{
-    text-align: center;
-    text-transform: capitalize;
 }

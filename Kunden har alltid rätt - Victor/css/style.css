@@ -1,6 +1,7 @@
 body{
     margin: 0%;
     overflow-x: hidden;
+    background-color: #3498db;
 }
 
 #main_container{
@@ -13,6 +14,32 @@ body{
     'main1'
     'main2'
     'main3'
+    'footer'
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 40% 40% 25% 40% 40% 30% 150%;
+    grid-template-areas:
+    'nav'
+    'header'
+    'main1'
+    'main2'
+    'section1 section2'
+}
+
+#about_container{
+    display: grid;
+    
+    margin: 5px;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+    'navabout'
+    'headerabout'
+    'aside1about section1about section2about'
+    'aside2about section3about section4about'
     'footer'
 }
 
@@ -34,6 +61,14 @@ main2{
 
 main3{
     background-color: #3498db;
+}
+
+.section1{
+    background-color: blue;
+}
+
+.section2{
+    background-color: burlywood;
 }
 
 footer{
@@ -143,4 +178,94 @@ h3{
     position: absolute;
     top: 11%;
     left: 50%;
+}
+
+.japanmap{
+    height: 700px;
+    position: absolute;
+    top: 260%;
+}
+
+.japanmaptext{
+    color: darkblue;
+    position: absolute;
+    left: 38%;
+    top: 256%;
+    font-size: 200%;
+    background-color: #3498db;
+}
+
+.navigationjapan{
+    color: white;
+    position: absolute;
+    right: 2%;
+    top: -3%;
+    font-size: 800%;
+}
+
+.searchjapan{
+    height: 100px;
+    position: absolute;
+    top: 11%;
+    left: 50%;
+}
+
+h2japan{
+    font-size: 50%;
+}
+
+h3japan{
+    position: absolute;
+    left: 45%;
+    top: 105%;
+    font-size: 50%;
+}
+
+.navabout{
+    background-color: pink;
+    grid-area: navabout;
+    display: flex;
+    margin: 5px;
+}
+
+.headerabout{
+    background-color: aliceblue;
+    grid-area: headerabout;
+    margin: 5px;
+}
+
+.aside1about{
+    background-color: aqua;
+    grid-area: aside1about;
+}
+
+.section1about{
+    background-color: black;
+    grid-area: section1about;
+    color: white;
+}
+
+.section2about{
+    background-color: blueviolet;
+    grid-area: section2about;
+}
+
+.aside2about{
+    background-color: brown;
+    grid-area: aside2about;
+}
+
+.section3about{
+    background-color: chocolate;
+    grid-area: section3about;
+}
+
+.section4about{
+    background-color: chartreuse;
+    grid-area: section4about;
+}
+
+.footerabout{
+    background-color: cadetblue;
+    grid-area: footerabout;
 }
