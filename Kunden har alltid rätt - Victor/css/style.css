@@ -161,10 +161,16 @@ footer{
 
 h2{
     font-size: 50%;
+    color: white;
 }
 
 h3{
     font-size: 50%;
+    color: white;
+}
+
+h1{
+    color: white;
 }
 
 .navigation{
@@ -202,7 +208,7 @@ japan.html
 
 .japanmaptext{
     grid-area: section2japan;
-    color: darkblue;
+    color: white;
     font-size: 200%;
 }
 
@@ -219,6 +225,7 @@ japan.html
 
 h2japan{
     font-size: 50%;
+    color: white;
 }
 
 .japan_temple{
@@ -338,4 +345,5 @@ V
 h4{
     font-size: 200%;
     text-align: center;
+    color: white;
 }
