@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
+
 body{
     margin: 0%;
     overflow-x: hidden;
@@ -15,7 +17,7 @@ V
     
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 270px 700px 750px 750px 710px 100px;
+    grid-template-rows: 270px 700px 750px 750px 710px 120px;
     grid-template-areas:
     'nav'
     'header'
@@ -35,7 +37,7 @@ V
 #container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 15% 20%;
+    grid-template-rows: 18% 20%;
     grid-template-areas: 
     'navjapan'
     'headerjapan'
@@ -76,6 +78,7 @@ main3{
 
 footer{
     position: relative;
+    justify-content: flex-start;
 }
 
 .logo{
@@ -87,6 +90,8 @@ footer{
     font-size: 400%;
     background-color: #035287;
     position: relative;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
 }
 
 .italien{
@@ -112,6 +117,8 @@ footer{
     text-decoration: underline;
     position: absolute;
     bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
     
 }
 
@@ -121,6 +128,8 @@ footer{
     text-decoration: underline;
     position: absolute;
     bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
 }
 
 .japan_text{
@@ -129,6 +138,8 @@ footer{
     text-decoration: underline;
     position: absolute;
     bottom: 1px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
 }
 
 
@@ -156,21 +167,27 @@ footer{
     text-align: center;
     text-transform: capitalize;
     justify-items: center;
-    
+}
+
+h1{
+    padding: 1%;
 }
 
 h2{
     font-size: 50%;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h3{
     font-size: 50%;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1{
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .navigation{
@@ -184,8 +201,8 @@ h1{
 .search{
     height: 100px;
     position: absolute;
-    top: 11%;
-    left: 50%;
+    top: 12%;
+    left: 45%;
 }
 
 /*
@@ -210,6 +227,8 @@ japan.html
     grid-area: section2japan;
     color: white;
     font-size: 200%;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
 }
 
 .navigationjapan{
@@ -226,6 +245,7 @@ japan.html
 h2japan{
     font-size: 50%;
     color: white;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .japan_temple{
@@ -283,6 +303,7 @@ V
     height: 600px;
     margin: 10px;
     text-align: center;
+    text-align: left;
 }
 
 .aside2about{
@@ -291,6 +312,7 @@ V
     margin: 10px;
     background-color: #035287;
     text-align: center;
+    text-align: left;
 }
 
 .section1about{
@@ -346,4 +368,6 @@ h4{
     font-size: 200%;
     text-align: center;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    padding: 2%;
 }
