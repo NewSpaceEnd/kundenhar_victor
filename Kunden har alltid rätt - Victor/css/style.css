@@ -4,47 +4,50 @@ body{
     background-color: #3498db;
 }
 
+/*
+index.html
+I
+I
+V
+*/
+
 #main_container{
+    
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 10% 25% 25% 25% 25% 10%;
+    grid-template-rows: 270px 700px 750px 750px 710px 100px;
     grid-template-areas:
     'nav'
     'header'
     'main1'
     'main2'
     'main3'
-    'footer'
+    'footer';
 }
+
+/*
+japan.html
+I
+I
+V
+*/
 
 #container{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 40% 40% 25% 40% 40% 30% 150%;
-    grid-template-areas:
-    'nav'
-    'header'
-    'main1'
-    'main2'
-    'section1 section2'
-}
-
-#about_container{
-    display: grid;
-    
-    margin: 5px;
-    grid-template-columns: 20% 40% 40%;
-    grid-template-rows: 20% 20% 20% 20% 20%;
-    grid-template-areas:
-    'navabout'
-    'headerabout'
-    'aside1about section1about section2about'
-    'aside2about section3about section4about'
-    'footer'
+    grid-template-rows: 15% 20%;
+    grid-template-areas: 
+    'navjapan'
+    'headerjapan'
+    'main1japan'
+    'main2japan'
+    'section1japan section2japan';
 }
 
 nav{
-    background-color: #3498db;
+    grid-area: nav;
+    display: flex;
+    text-align: center;
 }
 
 header{
@@ -52,27 +55,27 @@ header{
 }
 
 main1{
-    background-color: #3498db;
+    position: relative;
 }
 
 main2{
-    background-color: #3498db;
+    position: relative;
 }
 
 main3{
-    background-color: #3498db;
+    position: relative;
 }
 
 .section1{
-    background-color: blue;
+    position: relative;
 }
 
 .section2{
-    background-color: burlywood;
+    position: relative;
 }
 
 footer{
-    background-color: #3498db;
+    position: relative;
 }
 
 .logo{
@@ -82,6 +85,8 @@ footer{
 .header_text{
     text-align: center;
     font-size: 400%;
+    background-color: #035287;
+    position: relative;
 }
 
 .italien{
@@ -101,30 +106,29 @@ footer{
 }
 
 .italien_text{
-    position: absolute;
-    top: 150%;
-    left: 2%;
+    
     font-size: 800%;
     color: white;
     text-decoration: underline;
+    position: absolute;
+    bottom: 1px;
+    
 }
 
 .grekland_text{
-    position: absolute;
-    top: 230%;
-    left: 2%;
     font-size: 800%;
     color: white;
     text-decoration: underline;
+    position: absolute;
+    bottom: 1px;
 }
 
 .japan_text{
-    position: absolute;
-    top: 310%;
-    left: 2%;
     font-size: 800%;
     color: #3498db;
     text-decoration: underline;
+    position: absolute;
+    bottom: 1px;
 }
 
 
@@ -151,6 +155,7 @@ footer{
 .contact_text{
     text-align: center;
     text-transform: capitalize;
+    justify-items: center;
     
 }
 
@@ -159,9 +164,6 @@ h2{
 }
 
 h3{
-    position: absolute;
-    left: 40%;
-    top: 100%;
     font-size: 50%;
 }
 
@@ -180,92 +182,160 @@ h3{
     left: 50%;
 }
 
+/*
+index.html
+------------------------------------------------------------------------------------------------------------------
+japan.html
+*/
+
+.navjapan{
+    background-color: #3498db;
+    position: relative;
+    
+}
+
+
 .japanmap{
-    height: 700px;
-    position: absolute;
-    top: 260%;
+    grid-area: section1japan;
+    height: 500px;
 }
 
 .japanmaptext{
+    grid-area: section2japan;
     color: darkblue;
-    position: absolute;
-    left: 38%;
-    top: 256%;
     font-size: 200%;
-    background-color: #3498db;
 }
 
 .navigationjapan{
     color: white;
-    position: absolute;
-    right: 2%;
-    top: -3%;
+    grid-area: navjapan;
     font-size: 800%;
 }
 
 .searchjapan{
     height: 100px;
-    position: absolute;
-    top: 11%;
-    left: 50%;
+    grid-area: navjapan;
 }
 
 h2japan{
     font-size: 50%;
 }
 
-h3japan{
-    position: absolute;
-    left: 45%;
-    top: 105%;
-    font-size: 50%;
+.japan_temple{
+    grid-area: main2;
+    height: 720px;
 }
 
-.navabout{
-    background-color: pink;
+.tokyo{
+    background-color: black;
+    grid-area: main1;
+    height: 720px;
+    margin-bottom: 10px;
+    margin-top: 100px;
+}
+
+/*
+---------------------------------------------------------------
+About Us site
+I
+I
+V
+*/
+
+
+
+#about_container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 30%;
+    grid-template-areas: 
+    'navabout'
+    'headerabout'
+}
+
+#about_in_container{
+    display: grid;
+    grid-template-columns: 20% 40% 40%;
+    grid-template-rows: 50% 80%;
+    grid-template-areas:
+    'aside1about section1about section2about'
+    'aside2about section3about section4about'
+}
+
+.navigationabout{
     grid-area: navabout;
-    display: flex;
-    margin: 5px;
 }
 
 .headerabout{
-    background-color: aliceblue;
-    grid-area: headerabout;
-    margin: 5px;
+    background-color: #035287;
 }
 
 .aside1about{
-    background-color: aqua;
     grid-area: aside1about;
-}
-
-.section1about{
-    background-color: black;
-    grid-area: section1about;
-    color: white;
-}
-
-.section2about{
-    background-color: blueviolet;
-    grid-area: section2about;
+    background-color: #035287;
+    height: 600px;
+    margin: 10px;
+    text-align: center;
 }
 
 .aside2about{
-    background-color: brown;
     grid-area: aside2about;
+    height: 600px;
+    margin: 10px;
+    background-color: #035287;
+    text-align: center;
+}
+
+.section1about{
+    grid-area: section1about;
+    text-align: center;
+    height: 600px;
+    margin: 20px;
+    background-color: #035287;
+
+}
+
+.section2about{
+    grid-area: section2about;
+    height: 600px;
+    margin: 20px;
+    text-align: center; 
+    background-color: #035287;
 }
 
 .section3about{
-    background-color: chocolate;
     grid-area: section3about;
+    height: 600px;
+    margin: 20px;
+    text-align: center;
+    background-color: #035287;
 }
 
 .section4about{
-    background-color: chartreuse;
     grid-area: section4about;
+    height: 600px;
+    margin: 20px;
+    text-align: center;
+    background-color: #035287;
 }
 
-.footerabout{
-    background-color: cadetblue;
-    grid-area: footerabout;
+.cat_picture{
+    height: 500px;
+}
+
+.cat_in_dress{
+    height: 500px;
+}
+
+.intense_staring_guy{
+    height: 500px;
+}
+
+.enginar{
+    height: 500px;
+}
+
+h4{
+    font-size: 200%;
+    text-align: center;
 }
